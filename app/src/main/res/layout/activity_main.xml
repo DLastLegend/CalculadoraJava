@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtNum1"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Número1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Número2"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/btnSubtracao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="–" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/btnMultiplicacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/btnDivisao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="÷" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Limpar a Tela" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:background="@color/teal_700"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+</LinearLayout>
