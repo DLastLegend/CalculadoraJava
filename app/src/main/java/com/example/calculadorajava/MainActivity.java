@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                     num1 = Double.parseDouble(edtn1.getText().toString());
                     num2 = Double.parseDouble(edtn2.getText().toString());
                     res = num1 / num2;
-                    if(num2 > 0){
+                    if(num2 != 0){
                         result.setText(String.valueOf(res));
                     }else{
                         result.setText(msgErro);
